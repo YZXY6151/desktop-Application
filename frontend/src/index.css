@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 只定制左侧联系人列表的滚动条 */
+.contact-panel::-webkit-scrollbar {
+  width: 8px;    /* 滚动条宽度 */
+}
+
+.contact-panel::-webkit-scrollbar-track {
+  background: #2f3136;   /* Discord 左栏灰色背景 */
+  border-radius: 4px;
+}
+
+.contact-panel::-webkit-scrollbar-thumb {
+  background: #72767d;   /* 略浅的灰色滚动块 */
+  border-radius: 4px;
+}
+
+.contact-panel::-webkit-scrollbar-thumb:hover {
+  background: #909399;   /* 悬停时更亮一些 */
+}
+/* 聊天区滚动条：滑道透明，融入背景 */
+.chat-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-scroll::-webkit-scrollbar-track {
+  background: transparent;      /* 透明，让后面的聊天背景透出来 */
+}
+
+.chat-scroll::-webkit-scrollbar-thumb {
+  background: #5a5c63;          /* 滑块颜色保持浅灰 */
+  border-radius: 4px;
+}
+
+.chat-scroll::-webkit-scrollbar-thumb:hover {
+  background: #707279;
+}
